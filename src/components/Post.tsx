@@ -13,8 +13,6 @@ interface Content {
 
 export interface PostType {
   id: number;
-export interface PostType {
-  id: number;
   author: {
     name: string;
     role: string;
@@ -34,12 +32,10 @@ export function Post({ post }: PostProps) {
 
   const publishedDateFormatted = format(
     post.publishedAt,
-    post.publishedAt,
     "d 'de' LLLL 'às' HH:mm 'h'",
     { locale: ptBR }
   );
 
-  const publishedDateRelativeToNow = formatDistanceToNow(post.publishedAt, {
   const publishedDateRelativeToNow = formatDistanceToNow(post.publishedAt, {
     locale: ptBR,
     addSuffix: true,
@@ -77,10 +73,7 @@ export function Post({ post }: PostProps) {
       <header>
         <div className={styles.author}>
           <Avatar src={post.author.avatarUrl} alt="" />
-          <Avatar src={post.author.avatarUrl} alt="" />
           <div className={styles.authorInfo}>
-            <strong>{post.author.name}</strong>
-            <span>{post.author.role}</span>
             <strong>{post.author.name}</strong>
             <span>{post.author.role}</span>
           </div>
@@ -88,14 +81,12 @@ export function Post({ post }: PostProps) {
         <time
           title={publishedDateFormatted}
           dateTime={post.publishedAt.toISOString()}
-          dateTime={post.publishedAt.toISOString()}
         >
           {publishedDateRelativeToNow}
         </time>
       </header>
 
       <div className={styles.content}>
-        {post.content.map((line, index) => {
         {post.content.map((line, index) => {
           if (line.type === "paragraph") {
             return <p key={index}>{line.content}</p>;
