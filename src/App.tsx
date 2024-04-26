@@ -14,14 +14,17 @@ const posts: PostType[] = [
       role: "Web Developer",
     },
     content: [
-      { type: "paragraph", content: "Fala galeraa 👋" },
+      { type: "paragraph", content: "E aí !!!" },
       {
         type: "paragraph",
         content:
-          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat.",
+          "Acabei de subir mais um projeto no meu portifólio. É um projeto que fiz em um evento de programação.",
       },
-      { type: "paragraph", content: "O nome do projeto é DoctorCare 🚀 " },
-      { type: "link", content: "matheus.design/doctorcare" },
+      { type: "paragraph", content: "O nome do projeto é Voice Notes 🚀 " },
+      {
+        type: "link",
+        content: "",
+      },
     ],
     publishedAt: new Date("2024-04-20 20:00:00"),
   },
@@ -37,11 +40,10 @@ const posts: PostType[] = [
       { type: "paragraph", content: "Fala galeraa 👋" },
       {
         type: "paragraph",
-        content:
-          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat.",
+        content: "Tem projeto novo vindo por aí... Aguardem!!!",
       },
-      { type: "paragraph", content: "O nome do projeto é DoctorCare 🚀 " },
-      { type: "link", content: "matheus.design/doctorcare" },
+      { type: "paragraph", content: "" },
+      { type: "link", content: "" },
     ],
     publishedAt: new Date("2024-04-23 19:00:00"),
   },
