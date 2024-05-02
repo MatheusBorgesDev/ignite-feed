@@ -7,7 +7,7 @@
 ![preview_1](./.github/preview_1.png)
 ![preview_2](./.github/preview_2.png)
 
-🔗 [Click here to access](https://matheusborgesdev.github.io/Voice-Notes/)
+🔗 [Click here to access](https://matheusborgesdev.github.io/ignite-feed/)
 
 ## 💻 Technologies
 
